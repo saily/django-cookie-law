@@ -8,10 +8,14 @@ django_cookie_law.egg-info/
 
 .idea/
 
-geckodriver.log
 /.Python
 /.tox
 /bin
 /include
 /lib
 /pip-selfcheck.json
+/.cache
+/.eggs
+/selenium
+/geckodriver.log
+/ghostdriver.log
