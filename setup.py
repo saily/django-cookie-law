@@ -1,11 +1,12 @@
 #!/usr/bin/env python
 
-import os
-from setuptools import setup, find_packages
-from itertools import chain
 from glob import glob
+from itertools import chain
+from setuptools import find_packages
+from setuptools import setup
 
 import cookielaw
+import os
 
 
 CLASSIFIERS = [
@@ -36,12 +37,13 @@ setup(
     author_email='piotr@tymaszweb.pl',
     name='django-cookie-law',
     version='.'.join(str(v) for v in cookielaw.VERSION),
-    description='Helps your Django project comply with EU cookie law regulations',
-    long_description=open(os.path.join(os.path.dirname(__file__), 'README.rst')).read(),
+    description='Helps your Django project comply with EU cookie law regulations',  # NOQA
+    long_description=open(os.path.join(os.path.dirname(__file__), 'README.rst')).read(),  # NOQA
     url='https://github.com/TyMaszWeb/django-cookie-law',
     license='BSD License',
     platforms=['OS Independent'],
     classifiers=CLASSIFIERS,
+    setup_requires=['setuptools'],
     install_requires=[
         'Django>=1.8',
         'django-classy-tags>=0.3.0',

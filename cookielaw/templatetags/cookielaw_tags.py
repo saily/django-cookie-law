@@ -1,9 +1,9 @@
-import warnings
-import django
-
 from classytags.helpers import InclusionTag
 from django import template
 from django.template.loader import render_to_string
+
+import django
+import warnings
 
 
 register = template.Library()
